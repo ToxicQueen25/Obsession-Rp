@@ -160,11 +160,14 @@ body {
   transition: all .25s ease;
 }
 
-.card-link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
+.card-link,
+  .card-link:visited,
+  .card-link:hover,
+  .card-link:active {
+    display: block;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .card:hover {
