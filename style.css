@@ -142,20 +142,16 @@ body {
 }
 
 .feature-grid {
-  max-width: 1000px;
   width: fit-content;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 320px);
   gap: 30px;
   justify-content: center;
 }
 
 .card {
-  width: 300px;
-}
-
-.card {
+  width: 320px;
   min-height: 240px;
   background: rgba(255,255,255,.055);
   border: 1px solid rgba(192,132,252,.28);
