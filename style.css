@@ -369,15 +369,15 @@ footer {
 .business-link,
 .business-link:visited,
 .business-link:hover,
-.business-link:active {
-  display: block;
-  text-decoration: none;
+.business-link:active,
+.business-link h3,
+.business-link p,
+.business-link li,
+.business-link span {
   color: inherit;
-  cursor: pointer;
+  text-decoration: none !important;
 }
 
-.business-link:hover {
-  border-color: rgba(192,132,252,.75);
-  transform: translateY(-7px);
-  box-shadow: 0 0 38px rgba(192,132,252,.55);
+.business-link .status {
+  color: #e9d5ff;
 }
