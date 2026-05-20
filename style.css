@@ -365,3 +365,19 @@ footer {
     font-size: 42px;
   }
 }
+
+.business-link,
+.business-link:visited,
+.business-link:hover,
+.business-link:active {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.business-link:hover {
+  border-color: rgba(192,132,252,.75);
+  transform: translateY(-7px);
+  box-shadow: 0 0 38px rgba(192,132,252,.55);
+}
