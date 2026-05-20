@@ -5,22 +5,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Obsession RP Businesses</title>
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      background: #05000a;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .business-hero {
+      min-height: 45vh;
+      background:
+        linear-gradient(rgba(5,0,12,.45), rgba(5,0,12,.90)),
+        url("obsession-bg.png");
+      background-size: cover;
+      background-position: center;
+      padding: 30px;
+    }
+
+    .business-hero-content {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .business-hero-content h2 {
+      font-size: 58px;
+      color: white;
+      text-shadow: 0 0 30px rgba(192,132,252,1);
+    }
+
+    .business-hero-content p {
+      color: #f3e8ff;
+      font-size: 20px;
+      margin-top: 15px;
+    }
+
+    .business-section {
+      padding: 90px 35px;
+      background:
+        radial-gradient(circle at top left, rgba(147,51,234,.18), transparent 35%),
+        #090012;
+    }
+
+    .business-section h2 {
+      text-align: center;
+      font-size: 50px;
+      color: #f5d0fe;
+      text-shadow: 0 0 25px rgba(192,132,252,.85);
+      margin-bottom: 55px;
+    }
+
+    .business-grid {
+      max-width: 1150px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .business-card {
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(192,132,252,.28);
+      border-radius: 24px;
+      padding: 35px;
+      box-shadow: 0 0 28px rgba(147,51,234,.18);
+      transition: all .25s ease;
+    }
+
+    .business-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 0 38px rgba(192,132,252,.55);
+    }
+
+    .business-card h3 {
+      font-size: 30px;
+      color: #e9d5ff;
+      margin: 15px 0;
+    }
+
+    .business-card p,
+    .business-card li {
+      color: #f3e8ff;
+      line-height: 1.7;
+    }
+
+    .business-card ul {
+      margin-top: 18px;
+      padding-left: 22px;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .available .status {
+      background: rgba(34,197,94,.20);
+      color: #86efac;
+      border: 1px solid rgba(34,197,94,.45);
+    }
+
+    .pending .status {
+      background: rgba(234,179,8,.20);
+      color: #fde68a;
+      border: 1px solid rgba(234,179,8,.45);
+    }
+
+    .sold .status {
+      background: rgba(239,68,68,.20);
+      color: #fca5a5;
+      border: 1px solid rgba(239,68,68,.45);
+    }
+
+    .apply-section {
+      padding: 90px 35px;
+      text-align: center;
+      background: #05000a;
+    }
+
+    .apply-section h2 {
+      font-size: 44px;
+      color: #f5d0fe;
+      text-shadow: 0 0 22px rgba(192,132,252,.75);
+      margin-bottom: 20px;
+    }
+
+    .apply-section p {
+      max-width: 850px;
+      margin: 0 auto 30px;
+      color: #f3e8ff;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 800px) {
+      .business-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .business-hero-content h2 {
+        font-size: 42px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="page-hero">
+<header class="business-hero">
   <nav class="navbar">
     <h1>OBSESSION RP</h1>
     <a href="index.html" class="discord-btn">Home</a>
   </nav>
 
-  <div class="page-hero-content">
+  <div class="business-hero-content">
     <h2>Player Businesses</h2>
     <p>View available businesses, ownership opportunities, and city-approved openings inside Obsession RP.</p>
   </div>
 </header>
 
-<section class="features">
+<section class="business-section">
   <h2>Businesses For Sale</h2>
 
   <div class="business-grid">
@@ -75,7 +222,7 @@
 <section class="apply-section">
   <h2>Want To Own A Business?</h2>
   <p>
-    Business ownership requires approval through staff. Owners are expected to stay active,
+    Business ownership requires staff approval. Owners are expected to stay active,
     provide roleplay opportunities, hire employees, and keep their business involved in the city.
   </p>
 
