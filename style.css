@@ -143,11 +143,16 @@ body {
 
 .feature-grid {
   max-width: 1000px;
+  width: fit-content;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 300px);
   gap: 30px;
   justify-content: center;
+}
+
+.card {
+  width: 300px;
 }
 
 .card {
