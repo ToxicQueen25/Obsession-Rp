@@ -13,12 +13,10 @@ body {
 
 .hero {
     min-height: 100vh;
-    background:
-        linear-gradient(rgba(5, 0, 12, 0.35), rgba(5, 0, 12, 0.92)),
-        radial-gradient(circle at center, rgba(147, 51, 234, 0.22), transparent 45%),
-        url("obsession-bg.png");
+    background-image: url("obsession-bg.png");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 30px;
     position: relative;
@@ -43,8 +41,8 @@ body {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(circle at 25% 25%, rgba(192,132,252,.18), transparent 30%),
-        radial-gradient(circle at 75% 70%, rgba(88,28,135,.22), transparent 35%);
+        linear-gradient(rgba(5, 0, 12, 0.45), rgba(5, 0, 12, 0.75)),
+        radial-gradient(circle at center, rgba(147, 51, 234, 0.18), transparent 55%);
     pointer-events: none;
 }
 
