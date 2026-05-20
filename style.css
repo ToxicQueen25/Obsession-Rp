@@ -111,9 +111,13 @@ body {
 
 .hero-content h2 {
   font-size: 64px;
+  font-weight: 700;
   color: white;
-  text-shadow: 0 0 30px rgba(192,132,252,1);
-  margin-bottom: 25px;
+  text-shadow:
+    0 0 15px rgba(192,132,252,.6);
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  line-height: 1.1;
 }
 
 .hero-content p {
@@ -406,13 +410,13 @@ footer {
 
 .hero-logo {
   font-family: 'Cinzel', serif;
-  font-size: 72px;
+  font-size: 110px;
   font-weight: 700;
-  letter-spacing: 8px;
+  letter-spacing: 10px;
   color: #f5d0fe;
   text-shadow:
-    0 0 12px rgba(192,132,252,.9),
-    0 0 28px rgba(147,51,234,.75);
-  margin-bottom: 25px;
+    0 0 15px rgba(192,132,252,.95),
+    0 0 35px rgba(147,51,234,.8);
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
