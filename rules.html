@@ -1,346 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Obsession RP Rules</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <style>
-    body {
-      background:
-        radial-gradient(circle at top left, rgba(147, 51, 234, 0.35), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(88, 28, 135, 0.35), transparent 35%),
-        #05000a;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-
-    .particles {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background-image:
-    radial-gradient(circle, rgba(192,132,252,.45) 2px, transparent 3px),
-    radial-gradient(circle, rgba(147,51,234,.35) 1px, transparent 2px);
-  background-size: 90px 90px, 140px 140px;
-  animation: floatParticles 45s linear infinite;
-opacity: 0.85;
-}
-
-@keyframes floatParticles {
-  from {
-    background-position: 0 0, 0 0;
-  }
-  to {
-    background-position: 400px -600px, -300px -500px;
-  }
-}
-    
-    .rules-hero {
-      padding: 40px 30px 80px;
-      text-align: center;
-      background: linear-gradient(rgba(5,0,10,.75), rgba(5,0,10,.95));
-    }
-
-    .rules-hero h1 {
-      font-size: 64px;
-      color: #e9d5ff;
-      text-shadow: 0 0 25px #9333ea;
-      margin-top: 80px;
-    }
-
-    .rules-hero p {
-      color: #d8b4fe;
-      font-size: 20px;
-      max-width: 850px;
-      margin: 15px auto;
-    }
-
-    .rules-nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(10, 0, 20, 0.9);
-      backdrop-filter: blur(12px);
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid rgba(192,132,252,.25);
-    }
-
-    .rules-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 8px;
-    display: inline-block;
-    padding: 10px 16px;
-    border-radius: 999px;
-    background: rgba(147,51,234,.25);
-    border: 1px solid rgba(192,132,252,.35);
-    transition: all 0.25s ease;
-  }
-  
-  .rules-nav a:hover {
-    background: rgba(168,85,247,.6);
-    box-shadow: 0 0 20px rgba(192,132,252,.95);
-    transform: translateY(-3px);
-  }
-
-    .rules-wrap {
-      max-width: 1150px;
-      margin: auto;
-      padding: 60px 25px;
-    }
-
-    .rule-section {
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(192,132,252,.28);
-      border-radius: 22px;
-      padding: 35px;
-      margin-bottom: 35px;
-      box-shadow: 0 0 35px rgba(147,51,234,.18);
-    }
-
-    .rule-section h2 {
-      color: #e9d5ff;
-      font-size: 34px;
-      margin-bottom: 18px;
-      text-shadow: 0 0 15px rgba(147,51,234,.7);
-    }
-
-    .rule-section h3 {
-      color: #c084fc;
-      margin-top: 22px;
-      margin-bottom: 8px;
-      font-size: 23px;
-    }
-
-    .rule-section p,
-    .rule-section li {
-      color: #eeeeee;
-      font-size: 17px;
-      line-height: 1.75;
-    }
-
-    .rule-section ul {
-      padding-left: 24px;
-      margin-top: 10px;
-    }
-
-    .back-btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 13px 26px;
-      background: #9333ea;
-      color: white;
-      text-decoration: none;
-      border-radius: 999px;
-      box-shadow: 0 0 18px rgba(147,51,234,.75);
-    }
-    .search-box {
-  margin-top: 18px;
-}
-
-.search-box input {
-  width: min(500px, 90%);
-  padding: 14px 20px;
-  border-radius: 999px;
-  border: 1px solid rgba(192,132,252,.45);
-  background: rgba(255,255,255,.08);
-  color: white;
-  outline: none;
-  box-shadow: 0 0 18px rgba(147,51,234,.3);
-}
-
-.search-box input::placeholder {
-  color: #d8b4fe;
-}
-
-.rule-section.hidden {
-  display: none;
-}
-
-header,
-.rules-nav,
-.rules-wrap,
-footer {
-  position: relative;
-  z-index: 2;
-}
-    
-  </style>
-</head>
-
-<body>
-  
-  <div class="particles"></div>
-
-<header class="rules-hero">
-  <nav>
-    <h1 style="margin:0;font-size:32px;">OBSESSION RP</h1>
-    <a href="index.html" class="discord-btn">Home</a>
-  </nav>
-
-  <h1>Server Rules</h1>
-  <p>Luxury serious roleplay. Real stories. Real consequences. Respect the city, respect the scene, and protect the roleplay.</p>
-</header>
-
-<div class="rules-nav">
-  <a href="#overview">Overview</a>
-  <a href="#fear">Fear for Life</a>
-  <a href="#nlr">New Life Rule</a>
-  <a href="#failrp">Fail RP</a>
-  <a href="#driving">Driving</a>
-  <a href="#police">Police</a>
-  <a href="#criminal">Criminal</a>
-  <a href="#staff">Staff</a>
-
-  <div class="search-box">
-    <input type="text" id="ruleSearch" placeholder="Search a rule..." />
-  </div>
-</div>
-
 <main class="rules-wrap">
 
   <section class="rule-section" id="overview">
-    <h2>Introduction</h2>
-    <p>Welcome to Obsession RP, where immersive storytelling and community respect form the core of our experience. These rules are a commitment to keeping the city fair, inclusive, and enjoyable for everyone.</p>
+    <h2>Welcome to Obsession RP</h2>
+    <p>Obsession RP is a Military Family Owned & Operated community built around immersive storytelling, meaningful character development, and unforgettable roleplay experiences.</p>
+    <p>Every interaction, decision, and consequence helps shape the world we create together. Our goal is to provide a serious roleplay environment where stories matter and actions have meaning.</p>
+    <p>By joining Obsession RP, you agree to follow all server rules, Discord rules, and platform Terms of Service. Not knowing a rule does not excuse breaking it.</p>
 
-    <h3>Disclaimer</h3>
-    <p>Ignorance of any community guidelines and server rules is not an excuse. All community members and visitors are expected to review this document upon joining our community and to check it regularly to ensure compliance with the rules. The Obsession Rp Staff Team holds no responsibility or liability to notify you of rule changes, modifications, additions, or removals. The  Staff Team reserves the right to reasonably deviate from this document regarding punishment and to utilize better discretion in the enforcement of rules. If a player exhibits a highly disrespectful attitude or blatant disregard for the community, its staff, or its rules, a discussion of a permanent or extended ban will be initiated. Those with rule suggestions, complaints about actions taken against them, or other concerns are expected to submit a proper ticket via the Discord support channel.</p>
-
-    <h3>Important Notes</h3>
-    <ul>
-      <li>Rules are subject to change.</li>
-      <li>Roleplay always comes first.</li>
-      <li>Winning is never more important than the story.</li>
-    </ul>
+    <h3>The Obsession Standard</h3>
+    <p>Not every situation can be covered by a written rule. Players are expected to use common sense and make decisions that improve the roleplay experience for everyone involved.</p>
   </section>
 
   <section class="rule-section" id="fear">
-    <h2>Fear for Life & Combat Engagement</h2>
-    <p>All players must roleplay a realistic fear of death or serious injury. Your character is not fearless, invincible, or immune to danger.</p>
-
-    <h3>Prohibited Behavior</h3>
-    <ul>
-      <li>Do not rush multiple armed individuals alone.</li>
-      <li>Do not ignore weapons aimed at you.</li>
-      <li>Do not act fearless because of skill, armor, or experience.</li>
-      <li>Do not instantly re-engage after being injured, downed, or crashed.</li>
-      <li>Do not turn every confrontation into a gunfight.</li>
-    </ul>
-
-    <h3>Injuries & Recovery</h3>
-    <p>After serious injury, crashes, explosions, or close calls, you must roleplay pain, disorientation, and recovery time.</p>
+    <h2>Value of Life</h2>
+    <p>Your character values their life just as a real person would. Fear, injury, danger, and risk should always be roleplayed realistically.</p>
+    <p>Characters are not superheroes. If you are outnumbered, outgunned, injured, or placed in a dangerous situation, your character should respond in a believable way.</p>
+    <p>Reckless actions without concern for personal safety, serious injury, or death may be considered Fail Roleplay.</p>
   </section>
 
   <section class="rule-section" id="nlr">
     <h2>New Life Rule</h2>
-    <p>When your character is fully downed, declared dead, or respawned, they do not remember the events that led to their death.</p>
-
-    <ul>
-      <li>No revenge or retaliation.</li>
-      <li>No returning to the death scene until at least 15 minutes have passed and the scene is over.</li>
-      <li>No sharing information from the incident.</li>
-      <li>No using radio, phone, or third parties to pass lost information.</li>
-    </ul>
+    <p>When your character experiences a complete loss of consciousness, death, or a full memory wipe situation, the events leading up to that incident are forgotten.</p>
+    <p>This includes names, faces, voices, vehicles, locations, conversations, and actions connected to the scene.</p>
+    <p>Lost information may not be shared through phone, radio, Discord, third parties, or any outside method. Memories may only return naturally through roleplay.</p>
   </section>
 
   <section class="rule-section" id="failrp">
-    <h2>Fail Roleplay</h2>
-    <p>Fail Roleplay occurs when a player ignores, avoids, or breaks realistic roleplay in order to gain an advantage, escape consequences, or disrupt a scene. You are expected to roleplay situations in a believable, consistent, and cooperative way that fits the setting, your character, and the circumstances. Roleplay must continue even when the outcome is not in your favor.</p>
-
-    <ul>
-      <li>Do not ignore injuries, restraints, fear, or threats.</li>
-      <li>Do not use glitches or mechanics to avoid RP.</li>
-      <li>Do not abandon scenes without valid RP reason.</li>
-      <li>Do not act on knowledge your character would not have.</li>
-    </ul>
+    <h2>Roleplay Expectations</h2>
+    <p>Obsession RP is built around immersive storytelling. Players are expected to participate in scenes honestly, realistically, and cooperatively.</p>
+    <p>Fail Roleplay happens when a player ignores realistic behavior, avoids consequences, abuses mechanics, or disrupts a scene to gain an advantage.</p>
+    <p>Injuries should be roleplayed. Threats should be taken seriously. Consequences should be accepted naturally. Winning should never matter more than the story.</p>
   </section>
 
   <section class="rule-section" id="driving">
     <h2>Semi-Realistic Driving</h2>
-    <p>Driving should stay reasonable for the situation and vehicle. Unrealistic stunts, extreme speeds through traffic, and reckless behavior are discouraged.</p>
-
-    <h3>Speed Limits</h3>
-    <ul>
-      <li>City: 70 MPH</li>
-      <li>Sandy & Paleto: 70 MPH</li>
-      <li>Highways: 100 MPH</li>
-    </ul>
-
-    <h3>Aircraft</h3>
-    <p>Aircraft may not land in the city except on approved helipads. Use Sandy, Grapeseed, or Los Santos International Airport.</p>
+    <p>Driving should remain realistic for the vehicle being used and the environment around it.</p>
+    <p>Major crashes, rollovers, and high-speed collisions should be roleplayed properly. Vehicles are not indestructible, and reckless driving without reason may be considered Fail Roleplay.</p>
+    <p>Aircraft should only land at approved airports, airfields, helipads, or realistic landing areas.</p>
   </section>
 
   <section class="rule-section" id="police">
-    <h2>Police Department Rules</h2>
-    <p>Police are held to a higher roleplay and conduct standard because of their authority, equipment, and influence over scenes.</p>
-
-    <ul>
-      <li>Police must prioritize realistic roleplay over winning scenes.</li>
-      <li>Officers must respond to active calls when on duty.</li>
-      <li>Use of force must be justified and progressive.</li>
-      <li>Firearms are a last resort.</li>
-      <li>Downed individuals are not active threats.</li>
-      <li>PD must allow meaningful roleplay opportunities.</li>
-    </ul>
+    <h2>Law Enforcement Roleplay</h2>
+    <p>Law Enforcement Officers are held to a higher roleplay standard because of their authority and responsibility within the city.</p>
+    <p>Officers should focus on professionalism, realism, and meaningful interactions instead of simply winning scenes or making arrests.</p>
+    <p>Use of force should be reasonable, justified, and appropriate for the situation. Escalation should happen naturally through roleplay.</p>
   </section>
 
   <section class="rule-section" id="criminal">
-    <h2>Criminal Roleplay Rules</h2>
-    <p>Criminal roleplay must be story-driven and purposeful, not chaos for content.</p>
-
-    <ul>
-      <li>Crimes must have intent, planning, and risk.</li>
-      <li>Do not commit crimes only to provoke police.</li>
-      <li>Escalation must be gradual and justified.</li>
-      <li>Hostages must be treated as valuable lives.</li>
-      <li>Losing a scene is a valid roleplay outcome.</li>
-    </ul>
+    <h2>Criminal Roleplay</h2>
+    <p>Criminal roleplay should be purposeful, realistic, and story-driven. Crime should create roleplay, not chaos for the sake of chaos.</p>
+    <p>Robberies, kidnappings, gang activity, and other criminal scenes should involve planning, risk, and meaningful interaction.</p>
+    <p>Violence should not be the first answer to every problem. Losing a scene can create just as much story as winning one.</p>
   </section>
 
   <section class="rule-section" id="staff">
-    <h2>Dealing with Staff</h2>
-    <ul>
-      <li>Always follow staff direction.</li>
-      <li>Do not approach staff characters in city for OOC issues.</li>
-      <li>Open a ticket for reports, appeals, or concerns.</li>
-      <li>Evidence provided in reports is kept confidential.</li>
-      <li>Let scenes play out, gather evidence, then make a ticket.</li>
-    </ul>
+    <h2>Staff & Community Support</h2>
+    <p>The Obsession RP Staff Team exists to keep the community fair, welcoming, and enjoyable for everyone.</p>
+    <p>If an issue happens, allow the roleplay scene to finish, gather evidence, and submit a support ticket through Discord.</p>
+    <p>Players are expected to be respectful during staff interactions. Lying, manipulating evidence, or misleading staff may result in harsher punishment.</p>
 
-    <h3>Punishments</h3>
-    <p>Punishments may include verbal discussions, community service, suspension, or permanent ban depending on severity.</p>
+    <h3>Final Thoughts</h3>
+    <p>Obsession RP is more than just a server. It is a community built on creativity, respect, and storytelling.</p>
+    <p>Create stories. Respect others. Embrace consequences. Have fun building unforgettable moments together.</p>
 
     <a href="index.html" class="back-btn">Back to Home</a>
   </section>
 
 </main>
-
-<footer>
-  <p>© 2026 Obsession RP | Military Family Owned</p>
-</footer>
-
-  <script>
-const searchInput = document.getElementById("ruleSearch");
-const sections = document.querySelectorAll(".rule-section");
-
-searchInput.addEventListener("input", function () {
-  const search = this.value.toLowerCase();
-
-  sections.forEach(section => {
-    const text = section.innerText.toLowerCase();
-
-    if (text.includes(search)) {
-      section.classList.remove("hidden");
-    } else {
-      section.classList.add("hidden");
-    }
-  });
-});
-</script>
-  
-</body>
-</html>
