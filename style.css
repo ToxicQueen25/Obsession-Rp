@@ -430,4 +430,97 @@ footer {
   .feature-grid {
     grid-template-columns: 1fr;
   }
+  /* RULES PAGE */
+.rules-hero {
+  padding: 40px 30px 80px;
+  text-align: center;
+  background:
+    radial-gradient(circle at top left, rgba(147,51,234,.28), transparent 35%),
+    linear-gradient(rgba(5,0,10,.75), rgba(5,0,10,.95));
+}
+
+.rules-hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 64px;
+  color: #e9d5ff;
+  text-shadow: 0 0 25px #9333ea;
+  margin-top: 80px;
+}
+
+.rules-hero p {
+  color: #d8b4fe;
+  font-size: 20px;
+  max-width: 850px;
+  margin: 15px auto;
+  line-height: 1.7;
+}
+
+.rules-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(10, 0, 20, 0.9);
+  backdrop-filter: blur(12px);
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid rgba(192,132,252,.25);
+}
+
+.rules-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(147,51,234,.25);
+  border: 1px solid rgba(192,132,252,.35);
+}
+
+.rules-wrap {
+  max-width: 1150px;
+  margin: auto;
+  padding: 60px 25px;
+}
+
+.rule-section {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(192,132,252,.28);
+  border-radius: 22px;
+  padding: 35px;
+  margin-bottom: 35px;
+  box-shadow: 0 0 35px rgba(147,51,234,.18);
+}
+
+.rule-section h2 {
+  color: #e9d5ff;
+  font-size: 34px;
+  margin-bottom: 18px;
+  text-shadow: 0 0 15px rgba(147,51,234,.7);
+}
+
+.rule-section h3 {
+  color: #c084fc;
+  margin-top: 22px;
+  margin-bottom: 8px;
+  font-size: 23px;
+}
+
+.rule-section p {
+  color: #eeeeee;
+  font-size: 17px;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 26px;
+  background: #9333ea;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 0 18px rgba(147,51,234,.75);
+}
 }
